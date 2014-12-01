@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Selectores</title>
+  <meta name="description" content="">
+  <meta name="author" content="Colegio">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+     <!---------------------ESTILOS------------------->
+		<link rel="stylesheet" type="text/css" href="../CSS/selectores.css" />
+</head>
+
+
+<body>
+ 
+    
+    <nav class="menu">
+		<ul class="nav">
+    		<li><a class="radius1" href="index.html">< / ></a></li>
+     <li><a  href="Sintaxis.html">Sintaxis</a></li>
+					<li><a href="Asociar.html">Asociar CSS a HTML</a></li>
+					<li><a href="Selectores.html">Selectores</a>
+						<ul class="nav2">
+							<li><a href="Pseudoclases.html">Pseudoclases</a></li>
+							<li><a href="Pseudoelementos.html">Pseudoelementos</a></li>
+						</ul>
+					</li>
+					
+					<li><a class="radius2" href="Colores.html">Colores</a></li>
+				
+					<div class="clear"></div>
+					</ul>
+     
+    </nav>
+	
+	<section class="contenido4">
+		<article class="uno">
+		<p class="titulo">Etiqueta</p>
+		<p class="contenido1">Se aplica a todas las etiquetas que coincidan con el valor del selector.</p>
+		<p class="contenido2">-Se pueden agrupar varias etiquetas a las que se le quiere aplicar el mismo estilo.</p>
+    	</article>
+		
+			
+		<article class="dos">
+		<p class="titulo">Descendente</p>
+		<p class="contenido3">Selecciona los elementos que se encuentran dentro de otros elementos sin importar el nivel de profundidad.</p>
+		<p class="contenido4">" p span{color: red;} " Se traduciría como: Todas las etiquetas spam que son descendientes de una etiqueta p.</p>
+		</article>
+		
+		<article class="tres">
+		<p class="titulo">Universal</p>
+		<p class="contenido5">Se utiliza para seleccionar todos los elementos de la página.Se representa con un " * "</p>
+		<p class="contenido6">Combinado con el selector descendente puede restringir el alcance de este // " p * a{color: red;} " Se traduciría como: Todas los enlaces que descienden de un elemento que desciende de un párrafo. </p>
+		</article>
+		
+		
+		<article class="cuatro">
+		<p class="titulo">Selector de clase</p>
+		<p class="contenido7">El atributo class de la etiqueta HTML nos permitirá agrupar diferentes elementos a los cuales les queremos aplicar el mismo estilo.</p>
+		<p class="contenido8">El selector class tiene la siguiente sintaxis: .nombre_de_la_clase </p>
+		<p class="contenido9">Puede combinarse con el selector de etiquetas para restringir la aplicación sólo a aquellos elementos del tipo etiqueta que pertenecen a una determinada clase: <selector_etiqueta> .nombre_de_la_clase   </p>
+		<p class="contenido10">Un elemento puede pertenecer a varias clases: <etiqueta class="clase1 clase2"> </p>
+		<p class="contenido11">El selector de clase múltiple permite seleccionar elementos que pertenezcan a varias clases: .clase1 .clase2{ color:blue;}  </p>
+		</article>
+		
+		<article class="cinco">
+		<p class="titulo">Selector de ID #</p>
+		<p class="contenido12">El atributo ID permite asignar a una etiqueta HTML un identificador único.</p>
+		<p class="contenido13">El selector para apuntar a un identificador es: #nombreID </p>
+		</article>
+		
+		<article class="seis">
+		<p class="titulo">Selector de hijos ></p>
+		<p class="contenido14">Sirve para seleccionar elementos que descienden de otros elementos pero sólo en el primer nivel, los hijos directos: p>spam{color:blue;}</p>
+		</article>
+		
+		<article class="siete">
+		<p class="titulo">Selector adyacente +</p>
+		<p class="contenido15">Selecciona elementos hermanos.</p>
+		<p class="contenido16">Dos elementos son hermanos cuando tienen el mismo padre y están uno inmediatamente después del otro.</p>
+		</article>
+    
+
+	
+	</section>
+
+</body>
+</html>
